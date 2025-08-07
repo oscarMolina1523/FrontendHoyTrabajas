@@ -102,7 +102,7 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
           <div className="space-y-4">
             <Separator />
             <div className="space-y-4">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-wrap flex-row items-center justify-between">
                 <h3 className="text-lg font-semibold text-card-foreground">
                   Combinación Óptima
                 </h3>
