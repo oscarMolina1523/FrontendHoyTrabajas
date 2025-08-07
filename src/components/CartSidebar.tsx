@@ -34,8 +34,8 @@ export function CartSidebar({ cartItems, isOpen, onOpenChange }: CartSidebarProp
     setIsPaid(true);
     
     toast({
-      title: "Payment successful! 🎉",
-      description: `Your order of $${totalPrice.toFixed(2)} has been processed successfully.`,
+      title: "Pago exitoso! 🎉",
+      description: `Su orden de $${totalPrice.toFixed(2)} fue procesada correctamente.`,
       duration: 4000,
     });
 
@@ -66,17 +66,17 @@ export function CartSidebar({ cartItems, isOpen, onOpenChange }: CartSidebarProp
               {itemCount}
             </Badge>
           )}
-          <span className="sr-only">Open cart</span>
+          <span className="sr-only">Abrir carrito</span>
         </Button>
       </SheetTrigger>
       <SheetContent className="w-full sm:w-[400px] bg-background flex flex-col h-full">
         <SheetHeader className="space-y-3 flex-shrink-0">
           <SheetTitle className="flex items-center gap-2 text-xl font-semibold">
             <ShoppingCart className="h-5 w-5" />
-            Shopping Cart
+            Carrito de compras
           </SheetTitle>
           <SheetDescription>
-            {itemCount === 0 ? 'Your cart is empty' : `${itemCount} item${itemCount !== 1 ? 's' : ''} in your cart`}
+            {itemCount === 0 ? 'Su carrito esta vacio' : `${itemCount} item${itemCount !== 1 ? 's' : ''} en su carrito`}
           </SheetDescription>
         </SheetHeader>
         
@@ -116,8 +116,8 @@ export function CartSidebar({ cartItems, isOpen, onOpenChange }: CartSidebarProp
         ) : itemCount === 0 ? (
           <div className="flex-1 flex flex-col items-center justify-center py-12 text-center">
             <ShoppingCart className="h-16 w-16 text-muted-foreground mb-4" />
-            <p className="text-muted-foreground text-lg">Your cart is empty</p>
-            <p className="text-sm text-muted-foreground mt-2">Add some products to get started!</p>
+            <p className="text-muted-foreground text-lg">Your carrito esta vacio</p>
+            <p className="text-sm text-muted-foreground mt-2">Agregar al menos un producto para empezar!</p>
           </div>
         ) : (
           <>
