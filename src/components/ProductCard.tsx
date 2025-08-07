@@ -44,12 +44,12 @@ export function ProductCard({ product, onAddToCart, isLoading }: ProductCardProp
           {isLoading ? (
             <div className="flex items-center gap-2">
               <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent"></div>
-              Adding...
+              Agregando...
             </div>
           ) : (
             <div className="flex items-center gap-2">
               <Plus className="h-4 w-4" />
-              Add to Cart
+              Agregar al carrito
             </div>
           )}
         </Button>

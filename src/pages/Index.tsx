@@ -113,10 +113,10 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <h3 className="text-2xl font-bold text-foreground">
-                Our Products
+                Nuestros Productos
               </h3>
               <p className="text-muted-foreground">
-                {products.length} premium products available
+                {products.length} productos disponibles
               </p>
             </div>
             
@@ -124,7 +124,7 @@ const Index = () => {
             <div className="relative w-full sm:w-80">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
-                placeholder="Search products..."
+                placeholder="Buscar Productos..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-9 bg-background"
@@ -150,7 +150,7 @@ const Index = () => {
             <div className="text-center py-12">
               <Search className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                No products found
+                No se encontraron productos
               </h3>
               <p className="text-muted-foreground">
                 {searchTerm ? 'Try adjusting your search terms' : 'No products available at the moment'}
@@ -172,7 +172,7 @@ const Index = () => {
           {filteredProducts.length > 0 && (
             <div className="text-center pt-4">
               <Badge variant="secondary" className="text-sm">
-                Showing {filteredProducts.length} of {products.length} products
+                Mostrando {filteredProducts.length} de {products.length} productos
               </Badge>
             </div>
           )}
@@ -183,7 +183,7 @@ const Index = () => {
       <footer className="bg-muted/30 border-t border-border mt-16">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-muted-foreground">
-            <p>&copy; 2025 TechStore. Premium electronics for everyone.</p>
+            <p>&copy; 2025 Oscar Molina. Desarrollador Web.</p>
           </div>
         </div>
       </footer>
