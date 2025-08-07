@@ -73,8 +73,8 @@ const Index = () => {
                 <ShoppingBag className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">TechStore</h1>
-                <p className="text-sm text-muted-foreground">Premium electronics & accessories</p>
+                <h1 className="text-xl font-bold text-foreground">HoyTrabajas</h1>
+                <p className="text-sm text-muted-foreground">Electrónica y accesorios de primera calidad</p>
               </div>
             </div>
             <CartSidebar 
@@ -91,13 +91,13 @@ const Index = () => {
         <section className="text-center space-y-4 py-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-4">
             <Sparkles className="h-4 w-4" />
-            Premium Electronics Collection
+            Collección Electronica Premium
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
-            Discover Amazing Tech Products
+            Descubre productos electrónicos de alta calidad
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From laptops to accessories, find everything you need for your digital lifestyle with our curated selection of premium electronics.
+            Desde computadoras portátiles hasta accesorios, encuentre todo lo que necesita para su estilo de vida digital con nuestra selección curada de productos electrónicos de primera calidad.
           </p>
         </section>
 

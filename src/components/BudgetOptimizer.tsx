@@ -1,20 +1,26 @@
-import { useState } from 'react';
-import { Product, BudgetOptimizationResult } from '@/types/api';
-import { findBestCombination } from '@/lib/budget-optimizer';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Calculator, Zap, DollarSign } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+import { useState } from "react";
+import { Product, BudgetOptimizationResult } from "@/types/api";
+import { findBestCombination } from "@/lib/budget-optimizer";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Calculator, Zap, DollarSign } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 interface BudgetOptimizerProps {
   products: Product[];
 }
 
 export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
-  const [budget, setBudget] = useState<string>('150');
+  const [budget, setBudget] = useState<string>("150");
   const [result, setResult] = useState<BudgetOptimizationResult | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
@@ -25,9 +31,8 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
     }
 
     setIsCalculating(true);
-    // Add a small delay to show loading state
-    await new Promise(resolve => setTimeout(resolve, 500));
-    
+    await new Promise((resolve) => setTimeout(resolve, 500));
+
     const optimization = findBestCombination(products, budgetAmount);
     setResult(optimization);
     setIsCalculating(false);
@@ -42,18 +47,22 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
           </div>
           <div>
             <CardTitle className="text-xl font-bold text-card-foreground">
-              Budget Optimizer
+              Optimizador de Presupuesto
             </CardTitle>
             <CardDescription className="text-muted-foreground">
-              Find the best combination of products within your budget using smart algorithms
+              Encuentra la mejor combinación de productos dentro de tu
+              presupuesto usando algoritmos inteligentes.
             </CardDescription>
           </div>
         </div>
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="space-y-3">
-          <Label htmlFor="budget" className="text-sm font-medium text-card-foreground">
-            Your Budget
+          <Label
+            htmlFor="budget"
+            className="text-sm font-medium text-card-foreground"
+          >
+            Su presupuesto
           </Label>
           <div className="flex gap-3">
             <div className="relative flex-1">
@@ -69,7 +78,7 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
                 step="0.01"
               />
             </div>
-            <Button 
+            <Button
               onClick={handleOptimize}
               disabled={isCalculating || !budget}
               className="bg-primary hover:bg-primary-hover text-primary-foreground px-6"
@@ -77,12 +86,12 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
               {isCalculating ? (
                 <div className="flex items-center gap-2">
                   <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent"></div>
-                  Computing...
+                  Calculando...
                 </div>
               ) : (
                 <div className="flex items-center gap-2">
                   <Zap className="h-4 w-4" />
-                  Optimize
+                  Optimizar
                 </div>
               )}
             </Button>
@@ -95,7 +104,7 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-semibold text-card-foreground">
-                  Optimal Combination
+                  Combinación Óptima
                 </h3>
                 <div className="flex gap-2">
                   <Badge variant="secondary" className="font-medium">
@@ -106,11 +115,11 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
                   </Badge>
                 </div>
               </div>
-              
+
               {result.products.length === 0 ? (
                 <div className="text-center py-8">
                   <p className="text-muted-foreground">
-                    No products fit within your budget of ${budget}
+                    Ningún producto se ajusta a su presupuesto de ${budget}
                   </p>
                 </div>
               ) : (
@@ -135,15 +144,21 @@ export function BudgetOptimizer({ products }: BudgetOptimizerProps) {
                           {product.description}
                         </p>
                       </div>
-                      <Badge variant="outline" className="font-semibold text-primary border-primary/20">
+                      <Badge
+                        variant="outline"
+                        className="font-semibold text-primary border-primary/20"
+                      >
                         ${product.price}
                       </Badge>
                     </div>
                   ))}
-                  
+
                   <div className="flex items-center justify-between pt-2 border-t border-border/50">
                     <div className="text-sm text-muted-foreground">
-                      Remaining budget: <span className="font-medium text-card-foreground">${result.remainingBudget.toFixed(2)}</span>
+                      Presupuesto restante:{" "}
+                      <span className="font-medium text-card-foreground">
+                        ${result.remainingBudget.toFixed(2)}
+                      </span>
                     </div>
                     <div className="text-lg font-bold text-primary">
                       Total: ${result.totalValue.toFixed(2)}
