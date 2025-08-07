@@ -1,73 +1,61 @@
-# Welcome to your Lovable project
+<h1 align="left">🛍️ Proyecto Carrito de Compras - React + TailwindCSS + TypeScript + ShadCN</h1>
 
-## Project info
+###
 
-**URL**: https://lovable.dev/projects/1d2f870c-d02e-4f9b-8359-27b960da9b3f
+<div align="center">
+  <img height="auto" src="https://i.ibb.co/zW71LsGv/Hoy-Trabajas.png"  />
+</div>
 
-## How can I edit this code?
+###
 
-There are several ways of editing your application.
+<p align="left">Este proyecto es una aplicación web moderna para un carrito de compras, desarrollada con las siguientes tecnologías:<br><br>Link de la DEMO: https://frontendhoytrabajas.vercel.app<br><br>Link de la API: https://backendhoytrabajas.vercel.app</p>
 
-**Use Lovable**
+###
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1d2f870c-d02e-4f9b-8359-27b960da9b3f) and start prompting.
+<h2 align="left">🚀 Tecnologías utilizadas</h2>
 
-Changes made via Lovable will be committed automatically to this repo.
+###
 
-**Use your preferred IDE**
+<p align="left">1. React: para construir la interfaz de usuario.<br><br>2. TypeScript: para mejorar la seguridad y calidad del código gracias al tipado estático.<br><br>3. TailwindCSS: para aplicar estilos de forma rápida, consistente y responsive.<br><br>4. ShadCN/UI: para componentes accesibles, modernos y totalmente compatibles con Tailwind.<br><br>5. Vite: como herramienta de desarrollo rápida y ligera.<br><br>6. ESLint y Prettier: para mantener buenas prácticas y estilo de código limpio.</p>
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+###
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+<h2 align="left">🎨 Diseño y responsividad</h2>
 
-Follow these steps:
+###
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<p align="left">1. Interfaz minimalista y centrada en el usuario.<br><br>2. Diseño responsive: funciona correctamente en dispositivos móviles, tabletas y escritorio.<br><br>3. Tipografía legible, botones accesibles, espaciados adecuados.<br><br>4. Esquinas redondeadas, sombras suaves y una estética moderna.</p>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+###
 
-# Step 3: Install the necessary dependencies.
-npm i
+<h2 align="left">✅ Buenas prácticas aplicadas</h2>
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+###
 
-**Edit a file directly in GitHub**
+<p align="left">1. Componentes reutilizables para mantener consistencia.<br><br>2. Separación de lógica y presentación.<br><br>3. Código modular, limpio y fácil de mantener.<br><br>4. Uso de TypeScript con tipado estricto.<br><br>5. Validaciones y manejo de errores.<br><br>6. Estructura de carpetas organizada.<br><br>7. Escalabilidad pensada desde el inicio.</p>
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+###
 
-**Use GitHub Codespaces**
+<h2 align="left">🛠️ Instalación Local</h2>
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+###
 
-## What technologies are used for this project?
+<p align="left"># Clonar el repositorio<br>git clone https://github.com/oscarMolina1523/FrontendHoyTrabajas.git<br><br># navegar a la carpeta<br>cd FrontendHoyTrabajas<br><br># Instalar dependencias<br>npm install<br><br># Correr el proyecto<br>npm run dev</p>
 
-This project is built with:
+###
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+<h2 align="left">📦 Requisitos</h2>
 
-## How can I deploy this project?
+###
 
-Simply open [Lovable](https://lovable.dev/projects/1d2f870c-d02e-4f9b-8359-27b960da9b3f) and click on Share -> Publish.
+<p align="left">1. Node.js >= 18<br><br>2. VSCode</p>
 
-## Can I connect a custom domain to my Lovable project?
+###
 
-Yes, you can!
+<h2 align="left">🧑‍💻 Autor</h2>
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+###
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<p align="left">Oscar Molina<br><br>💼 Desarrollador Web<br><br>GitHub: @oscarMolina1523<br><br>linkedin: https://www.linkedin.com/in/oscar-molina-916195309</p>
+
+###
